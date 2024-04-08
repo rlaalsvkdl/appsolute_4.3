@@ -1,3 +1,4 @@
+import 'package:untitled1/screens/first_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,28 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: const Text('AppBar'),
-        ),
-        body: Stack(
-          children: [
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.red,
-            ),
-        Container(
-          width: 50,
-          height: 50,
-          color: Colors.orange,
-        ),
-          ],
-        ),
-      ),
+      home: FirstScreen(),
     );
   }
 }
